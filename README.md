@@ -15,12 +15,8 @@
 * SunnyLand (https://assetstore.unity.com/packages/2d/characters/sunny-land-103349)
 * TextMesh Pro (https://assetstore.unity.com/packages/tools/utilities/text-to-textmesh-pro-upgrade-tool-176732)
 
-#### (MQTT)
-
-
 ## Installation du joystick
 
-* clone repo `https://github.com/o-reo/arcade-stick.git`
 * Gunicorn only runs on UNIX, therefore windows user will use WSL2, setup [instructions](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10)
 * install Python 3.9.4 (virtualenv recommended)
 * install requirements with `pip install -r requirements.txt`
