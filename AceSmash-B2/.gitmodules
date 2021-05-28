@@ -1,0 +1,3 @@
+[submodule "Assets/M2MqttUnity"]
+	path = Assets/M2MqttUnity
+	url = https://github.com/gpvigano/M2MqttUnity.git
