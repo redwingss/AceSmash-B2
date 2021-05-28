@@ -15,7 +15,22 @@
 * SunnyLand (https://assetstore.unity.com/packages/2d/characters/sunny-land-103349)
 * TextMesh Pro (https://assetstore.unity.com/packages/tools/utilities/text-to-textmesh-pro-upgrade-tool-176732)
 
-## Installation
+## Installation du joystick
+
+* Gunicorn only runs on UNIX, therefore windows user will use WSL2, setup [instructions](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10)
+* install Python 3.9.4 (virtualenv recommended)
+* install requirements with `pip install -r requirements.txt`
+* launch server with either:
+* `gunicorn --worker-class eventlet -w 1 app:app`
+* `flask run
+* `./start.sh`
+
+## Lancer sur docker
+You can also run arcade stick on Docker
+
+* docker-compose up The folder will be mounted in docker compose so the server will relaunch on edit.
+
+## Installation du jeu
 
 Git clone `https://github.com/enzosborea/AceSmash-B2.git`
 
@@ -24,6 +39,8 @@ Pour rendre le jeu exécutable sur Windows/Mac/Linux, il faudra se rendre sur le
 `File -> Build and Run -> Choisir sur quel OS le jeu sera exécutable`
 
 Lancer ensuite le jeu.
+
+
 
 ## Fonctionnalités
 
