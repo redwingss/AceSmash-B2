@@ -1,61 +1,42 @@
-M2MQTT for Unity
-====================
-This is a simple [Unity3d](http://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity.
-The M2MQTT library was modified to run also on UWP/HoloLens.
+# AceSmash - Unity/C#
 
-An example scene is provided with a UI for controlling the connection to the broker and for testing messaging.
+#### (Trello) 
+* Planification des tâches - [Trello](https://trello.com/b/WByZtZO1/acesmash) 
 
-**Requires Unity 2017.1 or higher.**
+## Pré-requis
 
- ![image](https://raw.githubusercontent.com/gpvigano/M2MqttUnity/master/images/M2MqttUnity_UI.png)
+#### (Unity)
 
-### Getting started
-To try this project with Unity press the button **Clone or download** and choose [**Download ZIP**](https://github.com/gpvigano/M2MqttUnity/archive/master.zip). Save and unzip the archive to your hard disk and then you can open it with Unity.
-An example scene is provided in M2MqttUnity/Examples/Scenes/M2MqttUnity_Test, with a UI for controlling the connection to a MQTT broker and to test publishing and receiving messages.
-You can find in the same folder also a scene slightly changed to test the project in VR/AR/MR (M2MqttUnity_TestXR).
+* Installation de Unity Hub - [UnityHubSetup](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe?_gl=1*3wa2xf*_ga*NDU3MzUxMDgxLjE2MjE5NTU5OTI.*_ga_1S78EFL1W5*MTYyMTk2MDAzMy4yLjEuMTYyMTk2MDAzOS41NA..&_ga=2.12565108.1134175248.1621955992-457351081.1621955992)
+* Installation de Unity - [Version 2020.3.3f1](https://unity3d.com/fr/get-unity/download?thank-you=update&download_nid=64639&os=Win)
 
-### Building on different platform and devices
-This project was tested with different versions of Unity (2017.1.0, 2017.1.4, 2018.2) with the following platforms:
-* Windows Standalone
-* Android (as simple app and for GearVR)
-* Universal Windows Platform (desktop and HoloLens, using Unity 2017.1.4 or higher).
+#### (Assets)
 
-These setting were used for all the platforms:
-* Other settings:
-  * *Scripting Define Symbols* = SSL
-* Resolution
-  * *Default is fullscreen* = no
-  * *Run in Background* = yes
+* SunnyLand (https://assetstore.unity.com/packages/2d/characters/sunny-land-103349)
+* TextMesh Pro (https://assetstore.unity.com/packages/tools/utilities/text-to-textmesh-pro-upgrade-tool-176732)
 
-Specific settings for Android:
-* Set the *Package Name*
-* for **GearVR**:
-  * check Virtual Reality Supported (or XR for newer versions of Unity)
-  * add *Oculus* in *Virtual Reality SDKs*
-  * set *Minimum API Level* to 19
-  * put your "oculussig..." file(s) in Assets/Plugins/Android/Assets
+## Installation
 
-Specific settings for Universal Windows Platform:
-* build with Unity 2017.1.4 or newer
-* set the *Package Name*
-* *Other settings*: set *API Compatibility Level* to .NET 4.6
-* *Publishing settings*: check *InternetClient* in *Capabilities*  
-* *Scripting Backend* set to .NET (deprecated in 2018.2) or IL2CPP (not for 2017.1)
-* for **HoloLens**:
-  * check *Virtual Reality Supported* (or XR for newer versions of Unity)
-  * add *Windows Holographic* (*Windows Mixed Reality* in newer versions) in *Virtual Reality SDKs*
+Git clone `https://github.com/enzosborea/AceSmash-B2.git`
 
-SSL connection problems found with some combination of Unity versions/platforms.
+Pour rendre le jeu exécutable sur Windows/Mac/Linux, il faudra se rendre sur le projet via Unity.
 
+`File -> Build and Run -> Choisir sur quel OS le jeu sera exécutable`
 
-### Contributing
+Lancer ensuite le jeu.
 
-Contributions from you are welcome!
+## Fonctionnalités
 
-If you find bugs or you have any new idea for improvements and new features you can raise an issue on GitHub (please follow the suggested template, filling the proper sections). To open issues or make pull requests please follow the instructions in [CONTRIBUTING.md](https://github.com/gpvigano/M2mqttUnity/blob/master/CONTRIBUTING.md).
+- 2 joueurs
+- Point de vie
+- Animation (Personnage)
+- Déplacement 
+- Système de saut
+- Système de lancer (Objet)
+- Menu
+- Plateforme
 
-### License
+## Idée protocole de communication (MQTT)
 
-Released under the [MIT License](https://github.com/gpvigano/M2MqttUnity/blob/master/LICENSE.txt).
-
-The included (slightly modified) [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) library is licensed under [Eclipse Public License 1.0](https://github.com/eclipse/paho.mqtt.m2mqtt/blob/master/LICENSE).
+* Clavier 
+* MQTT
