@@ -28,7 +28,7 @@
 ## Lancer sur docker
 You can also run arcade stick on Docker
 
-* docker-compose up The folder will be mounted in docker compose so the server will relaunch on edit.
+* `docker-compose up` The folder will be mounted in docker compose so the server will relaunch on edit.
 
 ## Installation du jeu
 
